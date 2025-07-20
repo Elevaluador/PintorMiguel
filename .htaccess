@@ -1,0 +1,60 @@
+RewriteEngine On
+
+# Redirigir index.html a la raíz (/)
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 3. Redirigir otros .html a URLs limpias
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^(.+?)\.html$ /$1/ [R=301,L]
+
+
+ErrorDocument 404 /404.html
+# Security Headers 
+    Header always set Strict-Transport-Security: "max-age=31536000" env=HTTPS 
+    Header always set X-XSS-Protection "0"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin" 
+    Header always set X-Frame-Options: "SAMEORIGIN"
+    Header always set Permissions-Policy "geolocation=(), microphone=()"
+   #Comprime los archivos antes de enviarlos al navegador
+   <IfModule mod_deflate.c>
+   AddOutputFilterByType DEFLATE text/plain
+   AddOutputFilterByType DEFLATE text/html
+   AddOutputFilterByType DEFLATE text/css
+   AddOutputFilterByType DEFLATE text/javascript
+   AddOutputFilterByType DEFLATE image/svg+xml
+   AddOutputFilterByType DEFLATE application/javascript
+   AddOutputFilterByType DEFLATE application/x-javascript
+   </IfModule> 
+# politica de cache de un año
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresByType image/x-icon A31557600
+ExpiresByType image/vnd.microsoft.icon A31557600
+ExpiresByType image/svg+xml A31557600
+
+ExpiresByType image/jpg A31557600
+ExpiresByType image/jpeg A31557600
+ExpiresByType image/png A31557600
+ExpiresByType image/gif A31557600
+ExpiresByType image/webp A31557600
+
+ExpiresByType video/ogg A31557600
+ExpiresByType audio/ogg A31557600
+ExpiresByType video/mp4 A31557600
+ExpiresByType video/webm A31557600
+
+ExpiresByType text/css A31557600
+ExpiresByType text/javascript A31557600
+ExpiresByType application/javascript A31557600
+ExpiresByType application/x-javascript A31557600
+
+ExpiresByType application/x-font-ttf A31557600
+ExpiresByType application/x-font-woff A31557600
+ExpiresByType application/font-woff A31557600
+ExpiresByType application/font-woff2 A31557600
+ExpiresByType application/vnd.ms-fontobject A31557600
+ExpiresByType font/ttf A31557600
+ExpiresByType font/otf A31557600
+ExpiresByType font/woff A31557600
+ExpiresByType font/woff2 A31557600

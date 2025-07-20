@@ -1,0 +1,4 @@
+User-agent:*
+allow:/
+#sitemap
+sitemap: https://www.pintormiguel.online/sitemap.xml
