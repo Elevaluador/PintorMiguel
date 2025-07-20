@@ -1,5 +1,10 @@
-# Todos los demás .html a URL limpia (excepto 404.html)
+/index.html / 301!
+
+# Redirigir todos los .html excepto algunos específicos
 /*.html /:splat 301!
 
-# Servir contenido HTML desde URLs limpias
+# Servir desde URLs limpias
 /* /:splat.html 200
+
+# 404
+/* /404.html 404
