@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/amor"
-  to = "/amor.html"
+  from = "/amor.html"
+  to = "/amor"
   status = 301
   force = true
 
@@ -8,6 +8,3 @@
   from = "/amor"
   to = "/amor.html"
   status = 200
-
-
-
