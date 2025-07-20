@@ -1,0 +1,15 @@
+# Redirigir archivos .html a URL limpia sin barra
+/index.html / 301
+/amor.html /amor 301
+
+
+# Redirigir URLs con barra final a sin barra
+/amor/ /amor 301
+/contacto/ /contacto 301
+
+# Servir archivo HTML cuando se accede a URL limpia
+/amor /amor.html 200
+
+
+# 404 para URLs no existentes
+/* /404.html 404
