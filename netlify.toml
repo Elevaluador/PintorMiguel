@@ -4,7 +4,6 @@
   to = "/:splat"
   status = 301
   force = true
-  conditions = {Query = {path = "*.html"}}
 
   [[redirects]]
   from = "/*"
