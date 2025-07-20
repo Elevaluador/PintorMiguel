@@ -1,4 +1,7 @@
-# Redirigir archivos .html a URL limpia sin barra
-/luchar  /amor.html 200!
+
+# El ! al final fuerza la redirección incluso si el archivo existe
+/amor.html /amor 301!
 
 
+# Servir contenido en URLs limpias
+/amor /amor.html 200
