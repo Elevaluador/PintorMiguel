@@ -3,10 +3,14 @@ RewriteEngine On
 # Redirigir index.html a la raíz (/)
 RewriteRule ^index\.html$ / [R=301,L]
 
-# 3. Redirigir otros .html a URLs limpias
+# Redirigir .html a URLs con barra final
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^(.+?)\.html$ /$1/ [R=301,L]
 
+# Forzar barra final para URLs que no la tienen (excepto archivos)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.+)$ /$1/ [R=301,L]
 
 ErrorDocument 404 /404.html
 # Security Headers 
