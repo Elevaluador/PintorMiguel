@@ -1,8 +1,5 @@
+# Todos los demás .html a URL limpia (excepto 404.html)
+/*.html /:splat 301!
 
-# El ! al final fuerza la redirección incluso si el archivo existe
-/amor.html /amor 301!
-/pepito.html /pepito 301!
-
-# Servir contenido en URLs limpias
-/amor /amor.html 200
-/pepito /pepito.html 200
+# Servir contenido HTML desde URLs limpias
+/* /:splat.html 200
