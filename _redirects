@@ -1,7 +1,8 @@
 
 # El ! al final fuerza la redirección incluso si el archivo existe
 /amor.html /amor 301!
-
+/pepito.html /pepito 301!
 
 # Servir contenido en URLs limpias
 /amor /amor.html 200
+/pepito /pepito.html 200
