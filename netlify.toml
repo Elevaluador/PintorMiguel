@@ -1,16 +1,3 @@
-[build]
-  publish = "."
-
-[[redirects]]
-  from = "/index.html"
-  to = "/"
-  status = 301
-
-[[redirects]]
-  from = "/amor.html"
-  to = "/amor/"
-  status = 301
-
 # PRIMERO las reglas específicas
 [[redirects]]
   from = "/amor/"
@@ -18,17 +5,4 @@
   status = 200
   force = true
 
-# DESPUÉS la regla general 404
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
 
-[context.production]
-  command = ""
-  
-[context.production.environment]
-  FORCE = "true"
-
-[settings]
-  trailing_slash = "always"
