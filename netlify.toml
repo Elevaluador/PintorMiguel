@@ -1,6 +1,6 @@
 # PRIMERO las reglas específicas
 [[redirects]]
-  from = "/amor/"
+  from = "/amor"
   to = "/amor.html"
   status = 200
   force = true
