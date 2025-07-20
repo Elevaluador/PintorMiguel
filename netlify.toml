@@ -1,0 +1,16 @@
+# Redirecciones individuales
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/amor.html"
+  to = "/amor/"
+  status = 301
+
+# Rewrite (servir contenido sin redirección)
+[[redirects]]
+  from = "/amor/"
+  to = "/amor.html"
+  status = 200
