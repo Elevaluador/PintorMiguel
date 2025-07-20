@@ -1,0 +1,12 @@
+# Usar query para detectar .html
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  force = true
+  conditions = {Query = {path = "*.html"}}
+
+  [[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 200
