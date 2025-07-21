@@ -10,7 +10,7 @@
   status = 200 
 
  [[redirects]]
-  from = "/servicios/:splat.html*"
+  from = "/servicios/:splat.html"
   to = "/servicios/*"
   status = 301
   force=true
