@@ -12,6 +12,8 @@
  [[redirects]]
   from = "/servicios/*"
   to = "/sert/:splat"
+  status = 200 
+c force=true
 
   
 
