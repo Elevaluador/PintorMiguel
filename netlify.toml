@@ -10,14 +10,12 @@
   status = 200 
 
 [[redirects]]
-  from = "/servicios/*.html"
-  to = "/servicios/:splat"
+  from = "/servicios/servicio-pintura.html"
+  to = "/servicios/servicio-pintura"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/servicios/*"
-  to = "/servicios/:splat.html"
+  from = "/servicios/servicio-pintura"
+  to = "/servicios/servicio-pintura.html"
   status = 200
-
-
