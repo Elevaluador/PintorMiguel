@@ -4,30 +4,14 @@
   to = "/amor"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/amor"
-  to = "/amor.html"
-  status = 200 
-
 #categoria de servicios
 [[redirects]]
   from = "/servicios/servicio-pintura.html"
   to = "/servicios/servicio-pintura"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/servicios/servicio-pintura"
-  to = "/servicios/servicio-pintura.html"
-  status = 200
 [[redirects]]
   from = "/servicios/ventana.html"
   to = "/servicios/servicio-ventana"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/servicios/servicio-ventana"
-  to = "/servicios/ventana.html"
-  status = 200
