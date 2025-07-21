@@ -1,3 +1,5 @@
 /servicios/servicio-pintura.html /servicios/servicio-pintura 301!
 /servicios/* /servicios/:splat.html 200
+# 404 general
+/* /404.html 404
 
