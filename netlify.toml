@@ -12,6 +12,6 @@
   force = true
 [[redirects]]
   from = "/servicios/ventana.html"
-  to = "/servicios/servicio-ventana"
+  to = "/servicios/ventana"
   status = 301
   force = true
