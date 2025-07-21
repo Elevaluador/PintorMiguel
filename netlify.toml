@@ -7,4 +7,10 @@
 [[redirects]]
   from = "/amor"
   to = "/amor.html"
+  status = 200 
+
+  [[redirects]]
+  from = "/servicios/*"
+  to = "/servicios/:splat.html"
   status = 200
+
