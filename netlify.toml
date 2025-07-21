@@ -11,9 +11,8 @@
 
  [[redirects]]
   from = "/servicios/*"
-  to = "/sert/:splat"
-  status = 200 
-  force=true
+  to = "/servicios/:splat.html"
+  status = 200
 
   
 
