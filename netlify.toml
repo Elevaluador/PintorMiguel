@@ -13,6 +13,7 @@
   from = "/servicios/*.html"
   to = "/servicios/:splat"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/servicios/*"
