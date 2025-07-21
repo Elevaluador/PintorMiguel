@@ -11,7 +11,7 @@
 
  [[redirects]]
   from = "/servicios/:splat.html"
-  to = "/servicios/*"
+  to = "/servicios/:splat"
   status = 301
   force=true
 
