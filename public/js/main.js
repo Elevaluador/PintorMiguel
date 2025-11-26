@@ -25,7 +25,7 @@
             // Construye el texto que se enviará por WhatsApp
             const whatsappMessage = `Hola Miguel, mi nombre es ${nombre}. Me interesa el servicio de ${servicio}. ${mensaje}. Mi teléfono es ${telefono}.`;
             // Codifica el mensaje en la URL de WhatsApp
-            const whatsappUrl = `https://wa.me/51953399383?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://wa.me/51905851831?text=${encodeURIComponent(whatsappMessage)}`;
             // Abre una nueva pestaña o ventana hacia WhatsApp Web / App con el mensaje prellenado
             window.open(whatsappUrl, '_blank');
         });
