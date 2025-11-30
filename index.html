@@ -53,9 +53,28 @@
     });
   </script>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-      <style>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">-->
+  <link rel="preload" 
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+  as="style"
+>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+  rel="stylesheet" 
+  media="print" 
+  onload="this.media='all'"
+>
+    <link rel="preload" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+  as="style"
+>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+  rel="stylesheet" 
+  media="print" 
+  onload="this.media='all'"
+>
+     <style>
      .nav-links a:hover,body{color:#000}.btn,.contact-btn,.nav-links a{text-decoration:none}.cta-buttons,.hero,.nav-links,nav{display:flex}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;line-height:1.6;overflow-x:hidden}.container{max-width:1200px;margin:0 auto;padding:0 20px}header{background:linear-gradient(135deg,#af4c0f 0,#ff914d 100%);color:#fff;padding:1rem 0;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.1)}nav{justify-content:space-between;align-items:center}.logo{font-size:1.5rem;font-weight:700}.nav-links{list-style:none;gap:2rem}.nav-links a{color:#fff;transition:color .3s}.contact-btn{background:#517ff0;color:#fff;padding:.5rem 1rem;border-radius:25px;transition:background .3s}.contact-btn:hover{background:#fff;color:#000}.hero{background:linear-gradient(rgba(81,127,240,.8),rgba(0,0,255,.7)) center/cover,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f8f9fa" width="1200" height="800"/><g fill="%23e9ecef"><circle cx="200" cy="200" r="50"/><circle cx="400" cy="300" r="30"/><circle cx="600" cy="150" r="40"/><circle cx="800" cy="400" r="35"/><circle cx="1000" cy="250" r="45"/><rect x="100" y="600" width="200" height="100" rx="10"/><rect x="400" y="650" width="150" height="80" rx="8"/><rect x="700" y="580" width="180" height="120" rx="12"/></g><text x="600" y="610" text-anchor="middle" font-size="24" fill="%23666">Servicios de Pintura Profesional en Piura</text></svg>') center/cover;height:100vh;align-items:center;color:#fff;text-align:center;padding-top:80px}.hero-content h1{font-size:3rem;margin-bottom:1rem;animation:1s ease-out fadeInUp}.hero-content p{font-size:1.2rem;margin-bottom:2rem;animation:1s ease-out .3s both fadeInUp}.cta-buttons{gap:1rem;justify-content:center;flex-wrap:wrap;animation:1s ease-out .6s both fadeInUp}.btn{padding:1rem 2rem;border-radius:30px;font-weight:600;transition:.3s;border:2px solid transparent}.btn-primary{background:#040e46;color:#fff}.btn-primary:hover{background:#af4c0f;transform:translateY(-2px)}.btn-secondary{background:0 0;color:#fff;border:2px solid #fff}.btn-secondary:hover{background:#fff;color:#2c3e50}.section-title{text-align:center;font-size:2.5rem;margin-bottom:3rem;color:#af4c0f;position:relative}.section-title::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:#f39c12}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:1000;box-shadow:0 4px 8px rgba(0,0,0,.3);animation:2s infinite pulse}@media (max-width:768px){.nav-links{display:none}.hero-content h1{font-size:2rem}.cta-buttons{flex-direction:column;align-items:center}.cookie-content{flex-direction:column;text-align:center}}@media (max-width:480px){.container{padding:0 15px}.hero-content h1{font-size:1.5rem}}
       </style>
      </head>
@@ -81,7 +100,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Renueva tus espacios en piura con acabados duraderos para casas, negocios y oficinas</h1>
-                <p>¿Buscas un servicio de un pintura profesional en Piura que combine rapidez, calidad y atención cercana? +10 años de experiencia transformando espacios. 👉 Escríbeme por WhatsApp para cotizar tu presupuesto.</p>
+                <p>¿Buscas un servicio de pintura profesional en Piura que combine rapidez, calidad y atención cercana? +10 años de experiencia transformando espacios. 👉 Escríbeme por WhatsApp para cotizar tu presupuesto.</p>
                 <div class="cta-buttons">
                     <a href="https://wa.me/51905851831?text=Hola%20Miguel,%20me%20interesa%20una%20cotización%20para%20servicios%20de%20pintura" class="btn btn-primary">
                         <i class="fab fa-whatsapp"></i> Cotización Gratuita
